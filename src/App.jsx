@@ -1,6 +1,8 @@
 import React, { useEffect } from "react";
 import "./App.css";
 
+const baseUrl = import.meta.env.VITE_BASE_URL;
+
 const App = () => {
   useEffect(() => {
     const video = document.getElementById("background-video");
