@@ -4,22 +4,9 @@ import "./App.css";
 const baseUrl = import.meta.env.VITE_BASE_URL;
 
 const App = () => {
-  useEffect(() => {
-    const video = document.getElementById("background-video");
-    video.muted = true;
-    video.play();
-
-    video.addEventListener("play", () => {
-      setTimeout(() => {
-        video.muted = false;
-        video.volume = 1.0;
-      }, 1000); // Unmute after a short delay
-    });
-  }, []);
-
   return (
     <div className="App">
-      <video id="background-video" className="video-bg" muted loop>
+      <video id="background-video" className="video-bg" autoPlay muted loop>
         <source
           src={`${baseUrl}/videos/Wiz Khalifa - Real Rich feat. Gucci Mane [Official Music Video] [9nV9GNjXFDo].webm`}
           type="video/webm"
