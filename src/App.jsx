@@ -1,18 +1,9 @@
-import React, { useEffect } from "react";
+import React from "react";
 import "./App.css";
-
-const baseUrl = import.meta.env.VITE_BASE_URL;
 
 const App = () => {
   return (
     <div className="App">
-      <video id="background-video" className="video-bg" autoPlay muted loop>
-        <source
-          src={`${baseUrl}/videos/Wiz Khalifa - Real Rich feat. Gucci Mane [Official Music Video] [9nV9GNjXFDo].webm`}
-          type="video/webm"
-        />
-        Your browser does not support HTML5 video.
-      </video>
       <div className="social-icons">
         <a
           href="https://www.x.com/felipeczpaz"
