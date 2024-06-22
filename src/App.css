@@ -6,7 +6,8 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: black;
+  background: url('/images/pexels-sebastian-167762.jpg') no-repeat center center fixed;
+  background-size: cover;
   color: white;
   font-family: Arial, sans-serif;
 }
